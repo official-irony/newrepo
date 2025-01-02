@@ -1,10 +1,12 @@
+# Write all file and folder name
 import os
-from pathlib import Path # Takes care of forward and backward slashes.
-# src represents source code
+from pathlib import Path # Takes care of forward and backward slashes > System Compatible Path.
+# src represents source code which is the main folder
 # Utils if for utility
 list_of_files = [
-    ".github/workflows/.gitkeep",
+    ".github/workflows/.gitkeep", # For continuous integration and continuous deployment CI/CD
     "src/__init__.py",
+    # Components 
     "src/components/__init__.py",
     "src/components/data_ingestion.py",
     "src/components/data_transformation.py",
@@ -15,8 +17,8 @@ list_of_files = [
     "src/pipeline/prediction_pipeline.py",
     "src/utils/__init__.py",
     "src/utils/utils.py",
-    "src/logger/logging.py"
-    "src/exception/exception",
+    "src/logger/logging.py",
+    "src/exception/exception.py",
     "tests/unit/__init__.py",
     "tests/integration/__init__.py",
     "init_setup.sh",
